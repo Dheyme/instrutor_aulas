@@ -3,6 +3,7 @@
 :root
 {
     --color-green: #50fa7b;
+    --color-rocket: #7159c1;
 }
 
 *
@@ -93,4 +94,46 @@ header
 #links-footer a
 {
     border-bottom: 1px solid var(--color-green);
+}
+
+/*=== CARDS ===*/
+
+.cards
+{
+    margin: 0 auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card
+{
+    background: var(--color-rocket);
+}
+
+.card_image_container img
+{
+    width: 100%;
+}
+
+.card_content,
+.card_info
+{
+    padding: 24px;
+}
+
+.card_info
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_price
+{
+    background-color: var(--color-rocket);
+    filter:brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
 }
